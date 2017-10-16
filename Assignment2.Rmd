@@ -202,7 +202,7 @@ Let's take the example of Iris flowers as above. We examined the difference of m
 
 We'd predict that the difference in the medians statistic would be extreme on the right side, that's to say the `pvalue_right` is very small, if our **Hypothesis B** is that the two groups are drawn from very different sources of variability and the permuted differences in the medians are in majority below the one of observed value. That's to say, the *"versicolor"* has a bigger median Sepal Width than *"virginica"* is not just an observation. In contrary, the two groups did have difference in their variability.
 
-In this case, we will use `pvalue_right` to see if it's really small. If it's the case, we will see that the observed difference in medians is "outside" and at the very right of the edge of permuted cases (most permuted differences in median is smaller than the observed one). So the permutation that based on **Hypothesis A** is not perminent to the fact, which in reverse, prove that **Hypothesis A** is not the right case.
+In this case, we will use `pvalue_right` to see if it's really small and the `pvalue_right` will tell us how many differences in medians are superior than our observed sample. If it's the case, we will see that the observed difference in medians is "outside" and at the very right of the edge of permuted cases (most permuted differences in median is smaller than the observed one. So the permutation that based on **Hypothesis A** is not perminent to the fact, which in reverse, prove that **Hypothesis A** is not the right case). 
 
 ```{r}
 iris_subset_1 <- iris[c(89:94, 108:112),]
